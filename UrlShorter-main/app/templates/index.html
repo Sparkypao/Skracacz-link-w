@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Skracacz linków</title>
+</head>
+<body>
+    <div class="app">
+        <header class="app-head">
+            <h1>🔗 Skracacz linków</h1>
+        </header>
+
+        <main class="app-main">
+            <section class="action">
+                <h2>Skróć swój link</h2>
+
+                <div class="input-block">
+                    <label for="url-input">Wklej swój link</label>
+                    <input id="url-input" type="url" placeholder="https://example.com/twoj_długi_link" required>
+                </div>
+
+                <button id="generate-button">Skróć</button>
+
+                <div id="short-url" class="result" style="display:none;">
+                    <h3>Twój skrócony link:</h3>
+                    <p></p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="app-footer">
+            <p>&copy; 2025 Skracacz linków</p>
+        </footer>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
